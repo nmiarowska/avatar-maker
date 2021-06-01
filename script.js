@@ -377,13 +377,3 @@ function Change(id){
     Redraw();
  }
 
- function save2() {
-    window.open(canvas.toDataURL('image/png'));
-    var gh = canvas.toDataURL('png');
-
-    var a  = document.createElement('a');
-    a.href = gh;
-    a.download = 'image.png';
-
-    a.click()
-}
